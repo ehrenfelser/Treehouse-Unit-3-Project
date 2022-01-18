@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,54 +13,78 @@
             <h1>THE CODE REVIEW</h1>
             <h3>Get the lastes news on how youe code is doing right in your inbox</h3>
         </header>
-        
+
         <body>
-            <h1>Contact Informatio</h1>
-            
-            <h4>Full Name</h4>
-            <input placeholder="Required">
+            <form action="index.html" method="POST">
 
-            <h4>Email Address</h4>
-            <input placeholder="Required">
+                <h2>Contact Information</h2>
 
-            <h4>Phone Number</h4>
-            <input>
+                <fieldset>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name">
+                
+                    <label for="email">Email Address</label>
+                    <input type="email" id="mail" name="user_email">
+                
+                    <label for="phone">Phone Number</label>
+                    <input type="phone" id="phone" name="user_phone">
 
-            <h4>Street Address</h4>
-            <input>
+                    <label for="street">Street Address</label>
+                    <input type="street" id="street" name="user_street">
 
-            <h4>City</h4>
-            <input>
-
-            <h4>State</h4>
-            <input>
-
-            <h4>Zip Code</h4>
-            <input>
-
-            <h2>Newsletter</h2>
-            <h4>Select the newsletter you would like to recieve</h4>
-
-            <input type="checkbox"><p>HTML News</p>
-            <input type="checkbox"><p>CSS News</p>
-            <input type="checkbox"><p>Javascript News</p>
-
-            <h4>Newsletter format</h4>
-            <input type="checkbox"><p>HTML</p>
-            <input type="checkbox"><p>Plain text</p>
-
-            <h4>Other topics you'd like to hear about</h4>
-            <input type="textbox">
-            
-            <br>
-            <button><h1>Sign up</h1></button>
-            
+                    <label for="city">City</label>
+                    <input type="city" id="city" name="user_city">
+                    
+                    <select name="Province" id="province">
+                        <optgroup label="Province">
+                            <option value="Alberta">Alberta</option>
+                            <option value="British_Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="New_Brunswick">New Brunswick</option>
+                            <option value="Newfoundland_and_Labrador">Newfoundland and Labrador</option>
+                            <option value="Northwest_Territories">Northwest Territories</option>
+                            <option value="Nova_Scotia">Novia Scotia</option>
+                            <option value="Nunavut">Nunavut</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Prince_Edward_Island">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Yukon">Yukon</option>
+                        </optgroup>
+                    </select>   
 
 
+                    <label for="postal_code">Postal Code</label>
+                    <input type="postal_code" id="postal_code" name="user_postal_code">
 
+                 </fieldset>
+
+
+                 <fieldset>
+
+                    <h2>Newsletter</h2>
+        
+                    <label>Selec the newsletter you would like to recieve</label>
+                    <input type="checkbox" id="HTML value="HTML_news" name="user_newsletter"><label for="HTML">HTML News</label><br>
+                    <input type="checkbox" id="CSS" value="CSS_news" name="user_newsletter"><label for="CSS">CSS News</label><br>
+                    <input type="checkbox" id="Java" value="Javascript_news" name="user_newsletter"><label for="Javascript">Javascript News</label>
+
+                    <label>Newsletter format</label>
+                    <input type="radio" id="HMTL_format" value="HTML_format" name="user_format"><label for="HTML_format">HTML</label><br>
+                    <input type="radio" id="plain_text_format" value="plain_text_format" name="user_format"><label for="plain_text_format">Plain text</label><br>
+                                                            
+                    <label for="topics">Other tops you'd like to hear about</label>
+                    <textarea name="user_topics" id="topics"></textarea>
+                    
+                    <button type="submit">Sign Up</button>
+    
+                </fieldset>
+            </form> 
         </body>
-        <footer>
 
+        <footer>
+            
+            <h4>Copyright: The Code Review</h4>
 
         </footer>
     </main>
