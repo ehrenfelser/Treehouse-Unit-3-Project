@@ -5,39 +5,65 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300&display=swap" rel="stylesheet">
+
         <title>Unit 3 Project</title>
     </head>
-    <main>
-        
+  
+    <body>
+       
         <header>
-            <h1>THE CODE REVIEW</h1>
-            <h3>Get the lastes news on how youe code is doing right in your inbox</h3>
+            THE CODE REVIEW
         </header>
 
-        <body>
+            <div class="news">
+            <h1>Signup for our newsletter</h1>
+            <p>Get the lastes news on how youe code is doing right in your inbox</p>
+            <div class="line"></div>
+            <div class="line2"></div>
+            </div>
+
             <form action="index.html" method="POST">
 
-                <h2>Contact Information</h2>
+                <fieldset class="contact-container">
 
-                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <div class="container">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user_name">
-                
+                    <input type="text" id="name" name="user_name" placeholder="Required">
+                    </div>
+
+                    <div class="container">
                     <label for="email">Email Address</label>
-                    <input type="email" id="mail" name="user_email">
-                
+                    <input type="email" id="mail" name="user_email" placeholder="Required">
+                    </div>  
+
+                    <div class="container">
                     <label for="phone">Phone Number</label>
                     <input type="phone" id="phone" name="user_phone">
+                    </div>
 
+                    <div class="container">
                     <label for="street">Street Address</label>
                     <input type="street" id="street" name="user_street">
+                    </div>
 
+                    <div class="container">
                     <label for="city">City</label>
+                    <br>
                     <input type="city" id="city" name="user_city">
-                    
-                    <select name="Province" id="province">
-                        <optgroup label="Province">
+                    </div>
+
+                   
+
+                    <div class="container">
+                    <legend>Province</legend>
+                     <select name="Province" id="province">
+                         <optgroup label="Province">
                             <option value="Alberta">Alberta</option>
                             <option value="British_Columbia">British Columbia</option>
                             <option value="Manitoba">Manitoba</option>
@@ -53,17 +79,19 @@
                             <option value="Yukon">Yukon</option>
                         </optgroup>
                     </select>   
+                    </div>
 
-
+                    <div class="container">
                     <label for="postal_code">Postal Code</label>
                     <input type="postal_code" id="postal_code" name="user_postal_code">
-
+                    </div>
                  </fieldset>
 
+                 <div class="line3"></div>
 
                  <fieldset>
 
-                    <h2>Newsletter</h2>
+                    <legend>Newsletter</legend>
         
                     <label>Selec the newsletter you would like to recieve</label>
                     <input type="checkbox" id="HTML value="HTML_news" name="user_newsletter"><label for="HTML">HTML News</label><br>
@@ -81,12 +109,10 @@
     
                 </fieldset>
             </form> 
-        </body>
+    </body>
 
-        <footer>
-            
-            <h4>Copyright: The Code Review</h4>
+    <footer>
+        <h4>Copyright: The Code Review</h4>
+    </footer>
 
-        </footer>
-    </main>
 </html>

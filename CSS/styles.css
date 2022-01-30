@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Serif 4', sans-serif;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #384975;
+    color: white;
+  }
+
+
+
+  @media (min-width: 768px) {
+
+
+
+
+  }
