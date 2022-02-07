@@ -41,6 +41,7 @@ legend {
 font-weight: bold;
 font-size: 1.25em
 
+
 }
 
 .news-letter {
@@ -85,13 +86,16 @@ input {
     
 }
 
-input[type="text"],
-select[id="province"],
-textarea[id="user_topics"]{
+input[type="text"] {
     width: 20em;
     margin: 20px 10px 20px 10px;
     padding: 15px;
    
+}
+
+input:hover {
+    background-color: #dfe0e0;
+
 }
 
 select#province {
@@ -110,11 +114,24 @@ select {
 
 }
 
+select:hover {
+    background-color: #dfe0e0;
+
+}
+
 
 .line3 {
     border-bottom: 2px solid black;
 
 }
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 15px;
+    
+}
+
+
 
 textarea {
     border: none;
@@ -123,7 +140,19 @@ textarea {
     text-align: end;
     font-size: 20px;
     border-radius: 5px;
-  }
+}
+
+textarea#topics {
+    text-align: start;
+    width: 100%;
+    margin: 25px 0 25px 0;
+
+}
+
+textarea:hover {
+    background-color: #dfe0e0;
+
+}
   
 
 button {
@@ -140,7 +169,18 @@ button {
     
 }
 
-  
+#button:hover {
+    border: 1.5px solid #ffff;
+    box-shadow: 0 0 10px #ececec;
+    
+}
+
+.foot {
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 40px;
+}
    
 
   @media (min-width: 768px) {
