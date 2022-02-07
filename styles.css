@@ -4,6 +4,13 @@
     margin: 0px;
   }
 
+  .main-body {
+    max-width: 600px;
+    margin-left: 15%;
+    margin-right: 15%;
+  
+  }
+
   header {
     text-align: center;
     background-color: #384975;
@@ -13,7 +20,12 @@
     font-size: 30px;
   }
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
+}
 
 h1,p {
     text-align: center;
@@ -31,51 +43,61 @@ font-size: 1.25em
 
 }
 
+.news-letter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 .line {
     border-top: 7px solid black;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-top: 18px;
+    width: 80%;
 }
   
 .line2 {
     border-bottom: 2px solid black;
+    width: 80%;
+    margin-bottom: 45px;
 }
+
+
+
 
 fieldset {
     border: none;
     margin: 0px;
     padding: 30px;
-    
 
 }
 
-form {
-    max-width: 300px;
-    margin: auto;
-    padding-top: 5px;
-    font-size: 22px;
-       
-}
 
-.flex-flex{
-display: flex;
-justify-content: flex-end;
-
-}
 
 input {
     border: none;
     background-color: #ececec;
-    font-size: 14pt;
+    font-size: 1.25em;
     text-align: end;
-    color: black;
-    padding: 2vh;
-    margin: 15px;
-  
-
+    
+    
 }
 
+input[type="text"],
+select[id="province"],
+textarea[id="user_topics"]{
+    width: 20em;
+    margin: 20px 10px 20px 10px;
+    padding: 15px;
+   
+}
 
+select#province {
+    width: 20rem;
+
+}
 
 select {
     border: none;
@@ -88,12 +110,6 @@ select {
 
 }
 
-.container {
-display: flex;
-align-items: flex-end;
-justify-content: space-between;
-
-}
 
 .line3 {
     border-bottom: 2px solid black;
@@ -110,7 +126,7 @@ textarea {
   }
   
 
-  button {
+button {
     background-color: #57decc;
     color: white;
     padding: 20px 40px;
@@ -122,11 +138,17 @@ textarea {
     border-width: 1px 1px 3px;
     border: none;
     
-    
-  }
+}
+
+  
    
 
   @media (min-width: 768px) {
+
+    .main-body {
+        max-width: 600px;
+        margin: auto;
+    }
     
     .form-flex {
         display: flex;
@@ -134,25 +156,24 @@ textarea {
 
     }
 
-
-    form {
-        max-width: 600px;
-        margin: 10px auto;
+    label {
+        align-items: center;
+    
     }
 
-    .container {
+   .container {
         display: flex;
-        align-items: center;
-        flex-basis: 1;
+        flex-direction: row;
+        align-items: baseline
         
-        }
+    }
+
 
     button {
         background-color: #57decc;
         color: white;
         padding: 19px 39px 18px 39px;
         text-align: center;
-        
         font-size: 15px;
         font-style: normal;
         border-width: 1px 1px 3px;
