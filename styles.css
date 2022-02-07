@@ -86,7 +86,13 @@ input {
     
 }
 
-input[type="text"] {
+#name,
+#email,
+#phone,
+#street,
+#city,
+#province,
+#topics {
     width: 20em;
     margin: 20px 10px 20px 10px;
     padding: 15px;
@@ -98,10 +104,6 @@ input:hover {
 
 }
 
-select#province {
-    width: 20rem;
-
-}
 
 select {
     border: none;
@@ -109,13 +111,18 @@ select {
     font-size: 14pt;
     text-align: end;
     color: grey;
-    padding: 15px;
-    margin: 15px;
 
 }
 
 select:hover {
     background-color: #dfe0e0;
+
+}
+
+#postal_code {
+    max-width: 50%;
+    margin: 20px 10px 20px 10px;
+    padding: 15px;
 
 }
 
@@ -194,6 +201,11 @@ button {
         display: flex;
         align-items: center;
 
+    }
+
+    #postal_code {
+        max-width: 25%;
+    
     }
 
     label {
