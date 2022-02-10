@@ -4,14 +4,13 @@
     margin: 0px;
   }
 
-  .main-body {
-    max-width: 600px;
-    margin-left: 15%;
-    margin-right: 15%;
+.main-body {
+    max-width: 75%;
+    margin: auto;
   
   }
 
-  header {
+header {
     text-align: center;
     background-color: #384975;
     color: white;
@@ -20,7 +19,7 @@
     font-size: 30px;
   }
 
-  .container {
+.container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -39,7 +38,7 @@ h1 {
 
 legend {
 font-weight: bold;
-font-size: 1.25em
+font-size: 1.75em
 
 
 }
@@ -77,13 +76,30 @@ fieldset {
 
 
 
-input {
+#name,
+#email,
+#phone,
+#street,
+#city,
+#province,
+#topics {
     border: none;
     background-color: #ececec;
     font-size: 1.25em;
     text-align: end;
-    
-    
+     
+}
+
+#postal_code {
+    border: none;
+    background-color: #ececec;
+    font-size: 1.25em;
+    max-width: 50%;
+    margin: 20px 10px 20px 10px;
+    padding: 15px;
+    margin-right: 51%
+
+
 }
 
 #name,
@@ -93,10 +109,9 @@ input {
 #city,
 #province,
 #topics {
-    width: 20em;
+    width: 90%;
     margin: 20px 10px 20px 10px;
     padding: 15px;
-   
 }
 
 input:hover {
@@ -119,16 +134,11 @@ select:hover {
 
 }
 
-#postal_code {
-    max-width: 50%;
-    margin: 20px 10px 20px 10px;
-    padding: 15px;
-
-}
 
 
 .line3 {
     border-bottom: 2px solid black;
+    margin-bottom: 40px;
 
 }
 
@@ -138,6 +148,13 @@ input[type="radio"] {
     
 }
 
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid grey;
+    transition: 300ms;
+}
 
 
 textarea {
@@ -182,6 +199,7 @@ button {
     
 }
 
+
 .foot {
     text-align: center;
     font-size: 15px;
@@ -193,7 +211,7 @@ button {
   @media (min-width: 768px) {
 
     .main-body {
-        max-width: 600px;
+        max-width: 90%;
         margin: auto;
     }
     
@@ -203,6 +221,18 @@ button {
 
     }
 
+#name,
+#email,
+#phone,
+#street,
+#city,
+#province,
+#topics {
+    width: 75%;
+    margin: 20px 10px 20px 10px;
+    padding: 15px;
+}
+
     #postal_code {
         max-width: 25%;
     
@@ -210,13 +240,17 @@ button {
 
     label {
         align-items: center;
+        font-weight: bold;
+        margin: 20px;
+        
     
     }
 
    .container {
         display: flex;
         flex-direction: row;
-        align-items: baseline
+        align-items: baseline;
+        
         
     }
 
